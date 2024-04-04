@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campbell River Whale Watching and Adventure Tours</title>
+    <link rel="stylesheet" href="/tours/tours.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Containers-->
+
+    <!--Navbar and Video Container-->
+    <div class="top-container">
+        <!--Navbar-->
+            <div class="navbar-top">
+                <div class="logo">
+                    <img onclick="homePage()" src="../assets/logotransparent.png" alt="Campbell River Whale Watching Logo" width="auto" height="68">
+                </div>
+                <div class="company-name">
+                    <span onclick="homePage()">CAMPBELL RIVER WHALE WATCHING & ADVENTURE TOURS</span>
+                </div>
+                <div class="nav-list">
+                        <li>
+                            <a onclick="homePage()">HOME</a>
+                        </li>
+                        <li class="tours-trigger" id="tourTrigger">
+                            <a onclick="allTours()">TOURS</a>
+                            <div class="tours-menu" id="tourMenu">
+                                <div class="menu-item">
+                                    <a onclick="whaleTourPage()">
+                                        <img src="../assets/whaletour.webp" alt="Whale Watching" class="navtourimg1">
+                                        <span>WHALE WATCHING</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a onclick="grizzlyTourPage()">
+                                        <img src="../assets/grizzlytour.webp" alt="Grizzly Bear Tours" class="navtourimg2">
+                                        <span>GRIZZLY TOURS</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a onclick="kayakTourPage()">
+                                        <img src="../assets/kayaktour.webp" alt="Kayaking Tours" class="navtourimg3">
+                                        <span>KAYAKING TOURS</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a onclick="photographyPage()">
+                                        <img src="../assets/photography.webp" alt="Photography/ Eagle Tours" class="navtourimg4">
+                                        <span>PHOTOGRAPHY CLASS</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a onclick="rapidsTourPage()">
+                                        <img src="../assets/rapidstour.webp" alt="Ocean Rapids Tours" class="navtourimg5">
+                                        <span>OCEAN RAPIDS</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a onclick="allTours()">
+                                        <img src="../assets/bearwatertour.webp" alt="Browse All Tours" class="navtourimg6">
+                                        <span>BROWSE ALL TOURS</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/navpages/packages.html">PACKAGES</a></li>
+                        <li><a href="/navpages/about.html">ABOUT US</a></li>
+                        <li><a href="/navpages/blog.html">BLOG</a></li>
+                        <li><a href="/navpages/contact.html">CONTACT</a></li>
+                    <button onclick="bookingPage()">BOOK MY TOUR</button>
+                </div>
+            </div>
+        
+        <!--End of Navbar-->
+    </div>
+    <!--End of Navbar-->
+
+    <div class="mid-container" id="midContainer">
+        <span>Start Your Campbell River Adventure Here:</span>
+
+    
+        <div class="img-containers">
+            <div class="img1" onclick="whaleTourPage()">
+                <div class="imgcss"><img src="../assets/whaletour.webp" alt="Whale Tour Image"></div>
+                <div class="img-caption">Whale Watching Tour</div>
+                <div class="img-text">
+                    Join us as we search for Killer Whales and Humpbacks! Both 6 and 8 hour options available!
+                </div>
+            </div>
+    
+            <div class="img1" onclick="grizzlyTourPage()">
+                <div class="imgcss"><img src="../assets/grizzlytour.webp" alt="Grizzly Tour Image"></div>
+                <div class="img-caption">Grizzly Tour</div>
+                <div class="img-text">
+                    With multiple tours available, your day in the wild with Grizzlies will be one you won't forget!
+                </div>
+            </div>
+            <div class="img1" onclick="waterfallBearTourPage()">
+                <div class="imgcss"><img src="../assets/bearwatertour.webp" alt="Whale Tour Image"></div>
+                <div class="img-caption">Spring Bear and Waterfall Tour</div>
+                <div class="img-text">
+                    Watch our coast awaken this Spring as we search for foraging bears on the beach and rushing waterfalls!
+                </div>
+            </div>
+            <div class="img1" onclick="whaleWildlifeTourPage()">
+                <div class="imgcss"><img src="../assets/whalewildlifetour.webp" alt="Whale Tour Image"></div>
+                <div class="img-caption">Whale and Wildlife Tour</div>
+                <div class="img-text">
+                    Want to see whales and wildlife but short for time? Join us on our 4 hour trips with multiple departures daily!  
+                </div>
+            </div>
+        </div>
+        <div class="img-containers">
+            <div class="img1" onclick="kayakTourPage()">
+                <div class="imgcss"><img src="../assets/kayaktour.webp" alt="Whale Tour Image"></div>
+                <div class="img-caption">Kayaking with Whales and Wildlife</div>
+                <div class="img-text">
+                    Single and Multi day Kayaking Tours Available. Operated by <b>WILDCOAST</b>.
+                </div>
+            </div>
+            <div class="img1" onclick="rapidsTourPage()">
+                <div class="imgcss"><img src="../assets/rapidstour.webp" alt="Whale Tour Image"></div>
+                <div class="img-caption">Ocean Rapids Tours</div>
+                <div class="img-text">
+                    Looking for a real adrenaline rush? Let us take you on a wild ride through our local tidal rapids and standing wave! 
+                </div>
+            </div>
+            <div class="img1" onclick="fishingCharterPage()">
+                <div class="imgcss"><img src="../assets/fishing.webp" alt="Whale Tour Image"></div>
+                <div class="img-caption">Fishing Charter</div>
+                <div class="img-text">
+                    We offer private fishing charters customized to suit your needs! Take your chance on a catch of a lifetime.
+                </div>
+            </div>
+            <div class="img1" onclick="photographyPage()">
+                <div class="imgcss"><img src="../assets/photography.webp" alt="Whale Tour Image"></div>
+                <div class="img-caption">Photography Workshop</div>
+                <div class="img-text">
+                    Join us on the ultimate 6 day photography workshop <b>-June 22-27 & July 4- 9 2024 & July 21 - 26, 2024.</b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--End of Containers-->
+    
+</body>
+</html>
