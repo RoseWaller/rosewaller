@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campbell River Whale Watching and Adventure Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Containers-->
+
+    <!--Navbar and Video Container-->
+    <div class="top-container">
+        <!--Navbar-->
+            <div class="navbar-top">
+                <div class="logo">
+                    <img onclick="homePage()" src="./assets/logotransparent.png" alt="Campbell River Whale Watching Logo" width="auto" height="68">
+                </div>
+                <div class="company-name">
+                    <span onclick="homePage()">CAMPBELL RIVER WHALE WATCHING & ADVENTURE TOURS</span>
+                </div>
+                <div class="nav-list">
+                        <li>
+                            <a onclick="homePage()">HOME</a>
+                        </li>
+                        <li class="tours-trigger" id="tourTrigger">
+                            <a onclick="allTours()">TOURS</a>
+                            <div class="tours-menu" id="toursMenu">
+                                <div class="menu-item">
+                                    <a onclick="whaleTourPage()">
+                                        <img src="/assets/whaletour.webp" alt="Whale Watching" class="navtourimg1">
+                                        <span>WHALE WATCHING</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a onclick="grizzlyTourPage()">
+                                        <img src="/assets/grizzlytour.webp" alt="Grizzly Bear Tours" class="navtourimg2">
+                                        <span>GRIZZLY TOURS</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a onclick="kayakTourPage()">
+                                        <img src="/assets/kayaktour.webp" alt="Kayaking Tours" class="navtourimg3">
+                                        <span>KAYAKING TOURS</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a onclick="photographyPage()">
+                                        <img src="/assets/photography.webp" alt="Photography/ Eagle Tours" class="navtourimg4">
+                                        <span>PHOTOGRAPHY CLASS</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a onclick="rapidsTourPage()">
+                                        <img src="/assets/rapidstour.webp" alt="Ocean Rapids Tours" class="navtourimg5">
+                                        <span>OCEAN RAPIDS</span>
+                                    </a>
+                                </div>
+                                <div class="menu-item">
+                                    <a onclick="allTours()">
+                                        <img src="/assets/bearwatertour.webp" alt="Browse All Tours" class="navtourimg6">
+                                        <span>BROWSE ALL TOURS</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/navpages/packages.html">PACKAGES</a></li>
+                        <li><a href="/navpages/about.html">ABOUT US</a></li>
+                        <li><a href="/navpages/blog.html">BLOG</a></li>
+                        <li><a href="/navpages/contact.html">CONTACT</a></li>
+                    <button onclick="bookingPage()">BOOK MY TOUR</button>
+                </div>
+            </div>
+        
+        <!--End of Navbar-->
+        <video id="big-vid" width="100%" height="auto" autoplay muted loop class="big-vid" > <!--poster="assets/bearscene.jpg"-->
+            <source src="./assets/Bear Trip Banner.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- need to figure out how to do this (look at the css file for more info
+            <div class="vignette"></div>-->
+    </div>
+    <!--End of Navbar and Video Container-->
+
+    <div class="mid-container" id="midContainer">
+
+
+    </div>
+
+
+    <!--End of Containers-->
+    
+</body>
+</html>

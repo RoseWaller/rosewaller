@@ -1,0 +1,272 @@
+body {
+    padding: 0;
+    margin: 0; /*getting rid of the border that was around the edges on default*/
+}
+
+.top-container {
+    height: auto; /* Set container height to full viewport height */
+    overflow: hidden; /* Prevent vertical scrollbar */
+}
+
+
+.navbar-top {
+    font-family: "Mukta", sans-serif;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px; /* Add padding instead of margin */
+    padding-right: 70px; /* Add padding instead of margin */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    /*margin-left: 67px;  
+    margin-right: 67px;*/
+    box-shadow: 0px 1px 3px rgba(0, 4, 255, 0.308);
+}
+
+.navbar-top .nav-list {
+    margin-left: auto;
+}
+
+.navbar-top .nav-list li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Adjust spacing between list items */
+
+}
+
+.logo .company-name {
+    margin-left: auto;
+}
+
+.logo {
+    margin-right: 30px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.company-name {
+    font-size: 19pt;
+    word-spacing: 3px;
+    color: #175C8A;
+    font-weight: 800;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.navbar-top button {
+    margin-left: 20px; /* Adjust spacing between the last list item and the button */
+    cursor: pointer;
+    border: none;
+    background-color: #175C8A;
+    color: white;
+    font-family: "Mukta", sans-serif;
+    font-weight: 800;
+    font-size: 13pt;
+    padding: 2px;
+    align-items: center;
+    width: 180px;
+    border-radius: 9.3px;
+    text-align: center;
+}
+
+.navbar-top button:hover {
+    background-color: #ad2429;
+}
+
+.nav-list li{
+    display: block;    
+    color: #175C8A;
+    padding-bottom: 18px;
+    list-style-type: none; 
+}
+
+.nav-list a {
+    color:#175C8A;
+    font-size: 14pt;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none; /*remove hyperlink underline*/
+    cursor: pointer;
+}
+
+.nav-list a:hover {
+    color: #ad2429; /*made the color a bit lighter so it's looks better*/
+    /*color: #921B1E;*/
+}
+
+/*Nav links menu*/
+
+.tours-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    white-space: nowrap;
+    left: 50%; /* Set left edge to 50% */
+    transform: translateX(-60%); /* Shift back by half of its own width */
+    margin-top: 10px; /* Adjust the vertical position if needed */
+    border-bottom-left-radius: 9.3px;
+    border-bottom-right-radius: 9.3px;
+}
+
+.tours-trigger {
+    position: relative; /* Ensure proper positioning for the dropdown menu */
+    text-align: center;
+    cursor: pointer;
+}
+
+.tours-trigger:hover .tours-menu {
+    display: block; /* Display the dropdown menu on hover */
+}
+
+.menu-item {
+    display: inline-block; /* Display list items horizontally */
+    vertical-align: top; /* Align items to the top */
+    margin-right: 10px; /* Adjust spacing between items */
+    margin-left: 10px;
+    margin-bottom: 14px;
+    height: 250px;
+    width: 230px;
+    cursor: pointer;
+}
+
+.menu-item a {
+    display: block; /* Ensure the entire block is clickable */
+    text-align: center; /* Center text */
+}
+
+.menu-item img {
+    display: block;  /*Ensure images are block elements */
+    margin: 0 auto; /* Center images horizontally */
+    /*width: 100%; /* Ensure the image takes up the entire width of the container */
+    /*height: auto; /* Allow the image to adjust its height proportionally */
+    /*object-fit: cover; /* Crop the image to cover the container */
+    /*overflow: hidden;
+    display: flex;*/
+    justify-content: center;
+    width: 100%;
+    height: 225px; /* Set your fixed Limit */
+    object-fit: cover;
+    border-radius: 9.3px;
+    margin-bottom: 5px;
+}
+
+
+
+/*Vignette around video - need to figure out how to do this so that the video and vignette are in a 
+separate container of their own so I can put the effect on the video only. Right now, it's putting it over
+everything in it's radius- the tours drop down menu and everything. Every time I've made a new container for 
+the video and vignette, it makes it so the tours drop down menu doesn't show. I've tried changing the z-index 
+and it didn't work.
+.vignette {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: 787.38px;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%); /*0,0,0, is black, another 0 is transparent. 0.4 is 40% transparency*/
+/*}*/
+
+
+
+/*Landing Page Image Cards*/
+
+.mid-container {
+    margin-top: 70px;
+    text-align: center;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap if they exceed the container's width */
+    justify-content: center;
+}
+
+.mid-container span {
+    font-family: "Mukta", sans-serif;
+    font-size: 21pt;
+    word-spacing: 3px;
+    color: #175C8A;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.img-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.img1:hover {
+    cursor: pointer;
+}
+
+.img1:hover .img-caption {
+    color: #ad2429;
+}
+
+.img1:hover .img-text {
+    color: #ad2429;
+}
+
+.img1:hover {
+    background-color: rgba(180, 0, 6, 0.068);
+}
+
+.img1 {
+    display: block;
+    margin: 10px;
+    width: 290px;
+    height: 455px;
+    /*height: 440px; /* Set your fixed Limit */
+    object-fit: cover;
+    border-radius: 11px;
+    border: 2px solid rgba(173, 36, 41, 0.1);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+.imgcss {
+    display: flex;
+    justify-content: center;
+    height: 340px;
+}
+
+.imgcss img{
+    width: 100%;
+    height: auto; /* Set your fixed Limit */
+    /*width: calc(100% - 10px); /* Adjust the width of the image */
+    /*height: calc(100% - 10px); /* Adjust the height of the image */
+    object-fit: cover;
+    border-radius: 9.3px;
+ 
+}
+
+.img-caption {
+    font-family: "Mukta", sans-serif;
+    width: 100%;
+    color:#175C8A;
+    font-size: 14pt;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;  /* Text color */
+    text-align: left; /* align text */
+    margin-top: 5px;
+}
+
+.img-text {
+    font-family: "Mukta", sans-serif;
+    color: #104364;
+    font-size: 11pt;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+}
