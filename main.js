@@ -69,25 +69,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
     handleToursMenuHover(); // Call the function once inside the DOMContentLoaded event listener
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    // This function will run when the DOM is fully loaded
-    function handleToursMenuHoverHomePage() {
-        let video = document.getElementById('big-vid');
-        let tourTrigger = document.getElementById('tourTrigger');
-        let toursMenu = document.getElementById('toursMenu');
-
-        tourTrigger.addEventListener('mouseover', function lowerMid () {
-            console.log('Mouseover');
-            video.style.zIndex = '-1'; // Lower z-index when tours menu is hovered
-        });
-
-        tourTrigger.addEventListener('mouseout', function higherMid () {
-            console.log('Mouseout');
-            video.style.zIndex = '1'; // Restore original z-index when tours menu is not hovered
-        });
-    }
-
-    handleToursMenuHoverHomePage(); // Call the function once inside the DOMContentLoaded event listener
-});
-
